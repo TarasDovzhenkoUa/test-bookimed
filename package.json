@@ -1,0 +1,17 @@
+{
+  "name": "bookimed",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "scss": "npm-run-all --parallel scss:styles scss:base",
+    "scss:styles": "sass src/scss/styles.scss src/css/styles.css --watch",
+    "scss:base": "sass src/scss/base.scss src/css/base.css --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.32.0",
+    "npm-run-all": "^4.1.5"
+  }
+}
