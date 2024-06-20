@@ -23,20 +23,20 @@ body {
   }
 }
 
-.show {
-  display: block !important;
-}
-
-.hide {
-  display: none !important;
-}
-
 .dropdown {
   position: relative;
   width: fit-content;
 
   @media(max-width: 768px) {
       min-width: 100px;
+  }
+
+  .show {
+    display: block;
+  }
+  
+  .hide {
+    display: none;
   }
 
   &__btn {

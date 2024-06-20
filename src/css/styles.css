@@ -45,10 +45,10 @@
   width: 33.3333%;
   height: 4px;
   border-radius: 6px;
-  background-color: #EAECF0;
+  background-color: #eaecf0;
 }
 .line-separator__item.active {
-  background-color: #16A34A;
+  background-color: #16a34a;
 }
 
 .clinic-selection {
@@ -57,7 +57,7 @@
   line-height: 20px;
   text-align: center;
   margin: 20px auto 0;
-  color: #15803D;
+  color: #15803d;
 }
 
 .filters {
@@ -94,7 +94,7 @@
   position: absolute;
   bottom: 0;
   transform: translateY(50%);
-  background: linear-gradient(90deg, #1A8943 0%, #4BEC87 100%);
+  background: linear-gradient(90deg, #1a8943 0%, #4bec87 100%);
   box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1490196078);
   padding: 6px 10px 6px 10px;
   border-radius: 32px;
@@ -141,7 +141,7 @@
   left: 0;
   top: 50%;
   transform: translateY(-50%);
-  background-color: #98A2B3;
+  background-color: #98a2b3;
 }
 .clinic-card__reviews-stars-icon {
   width: 20px;
@@ -253,7 +253,7 @@
   margin-bottom: 8px;
 }
 .doctor-card__benefits-item--active {
-  color: #1D4ED8;
+  color: #1d4ed8;
 }
 .doctor-card__benefits-item span {
   position: relative;
@@ -273,7 +273,7 @@
   left: 0;
   top: 50%;
   transform: translateY(-50%);
-  background-color: #98A2B3;
+  background-color: #98a2b3;
 }
 .doctor-card__benefits-icon {
   width: 20px;
@@ -301,7 +301,7 @@
   display: flex;
   padding: 12px 16px 12px 12px;
   border-radius: 8px;
-  background-color: #F0FDF4;
+  background-color: #f0fdf4;
 }
 .select-options__text-icon {
   width: 20px;
@@ -321,39 +321,40 @@
   font-weight: 400;
   line-height: 20px;
   text-align: left;
-  color: #14532D;
+  color: #14532d;
 }
 .select-options__variant {
   display: flex;
   flex-direction: column;
   margin-top: 24px;
 }
-.select-options__variant .custom-radio {
+
+.custom-radio {
   display: inline-block;
   margin-right: 20px;
 }
-.select-options__variant .custom-radio:not(:last-child) {
+.custom-radio:not(:last-child) {
   margin-bottom: 16px;
 }
-.select-options__variant .custom-radio input[type=radio] {
+.custom-radio input[type=radio] {
   display: none;
 }
-.select-options__variant .custom-radio label {
+.custom-radio label {
   cursor: pointer;
-  border: 1px solid #D0D5DD;
+  border: 1px solid #d0d5dd;
   padding: 16px;
   border-radius: 8px;
   display: block;
   text-align: center;
   width: 100%;
 }
-.select-options__variant .custom-radio label:hover {
+.custom-radio label:hover {
   background-color: #f0f0f0;
 }
-.select-options__variant .custom-radio input[type=radio]:checked + label .custom-radio__check-icon {
+.custom-radio input[type=radio]:checked + label .custom-radio__check-icon {
   display: block;
 }
-.select-options__variant .custom-radio__title {
+.custom-radio__title {
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
@@ -361,42 +362,42 @@
   color: #101828;
   margin-right: 8px;
 }
-.select-options__variant .custom-radio__check {
+.custom-radio__check {
   width: 24px;
   height: 24px;
-  border: 1px solid #98A2B3;
+  border: 1px solid #98a2b3;
   border-radius: 50%;
   overflow: hidden;
   flex-shrink: 0;
 }
-.select-options__variant .custom-radio__check-icon {
+.custom-radio__check-icon {
   display: none;
 }
-.select-options__variant .custom-radio__check-icon img,
-.select-options__variant .custom-radio__check-icon svg {
+.custom-radio__check-icon img,
+.custom-radio__check-icon svg {
   display: inline-block;
   width: 100%;
   height: 100%;
   object-fit: contain;
 }
-.select-options__variant .custom-radio__top {
+.custom-radio__top {
   display: flex;
   justify-content: space-between;
 }
-.select-options__variant .custom-radio__bottom {
+.custom-radio__bottom {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-top: 32px;
 }
-.select-options__variant .custom-radio__bottom-price {
+.custom-radio__bottom-price {
   font-size: 18px;
   font-weight: 500;
   line-height: 24px;
   text-align: left;
   color: #101828;
 }
-.select-options__variant .custom-radio__bottom-price--old {
+.custom-radio__bottom-price--old {
   font-size: 14px;
   font-weight: 300;
   line-height: 20px;
@@ -404,14 +405,14 @@
   margin-right: 1px;
   text-decoration: line-through;
 }
-.select-options__variant .custom-radio__bottom-price--new {
+.custom-radio__bottom-price--new {
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
   text-align: left;
-  color: #D92D20;
+  color: #d92d20;
 }
-.select-options__variant .custom-radio__bottom-link {
+.custom-radio__bottom-link {
   font-size: 14px;
   font-weight: 500;
   line-height: 20px;
@@ -432,7 +433,7 @@
   display: flex;
   padding: 12px 16px 12px 12px;
   border-radius: 8px;
-  background-color: #EFF6FF;
+  background-color: #eff6ff;
 }
 .payment-method__text-icon {
   width: 20px;
@@ -452,7 +453,7 @@
   font-weight: 400;
   line-height: 20px;
   text-align: left;
-  color: #1D4ED8;
+  color: #1d4ed8;
 }
 
 .ratings-reviews__title {
@@ -492,7 +493,7 @@
   left: 0;
   top: 50%;
   transform: translateY(-50%);
-  background-color: #98A2B3;
+  background-color: #98a2b3;
 }
 .ratings-reviews__reviews-stars-icon {
   width: 20px;
@@ -572,7 +573,7 @@
   font-weight: 400;
   line-height: 16px;
   text-align: left;
-  color: #B54708;
+  color: #b54708;
   margin-left: 8px;
   margin-right: 4px;
 }
@@ -619,7 +620,7 @@
 }
 .ratings-reviews__slide-text span,
 .ratings-reviews__slide-text a {
-  color: #15803D;
+  color: #15803d;
   text-decoration: underline;
 }
 
@@ -645,7 +646,7 @@
   line-height: 28px;
   text-align: left;
   color: #101828;
-  margin-right: 16px;
+  margin-right: 4px;
 }
 .price-section__btns {
   display: flex;
@@ -655,12 +656,12 @@
 .price-section__btn {
   padding: 12px 10px 12px 10px;
   border-radius: 8px;
-  border: 1px solid #15803D;
+  border: 1px solid #15803d;
   font-size: 16px;
   font-weight: 600;
   line-height: 24px;
   text-align: center;
-  color: #15803D;
+  color: #15803d;
   box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.0509803922);
   text-decoration: none;
   width: 50%;
@@ -671,7 +672,7 @@
 }
 .price-section__btn--green {
   color: #fff;
-  background-color: #15803D;
+  background-color: #15803d;
 }
 
 .swiper .swiper-pagination {
@@ -680,14 +681,14 @@
   justify-content: center;
 }
 .swiper .swiper-pagination .swiper-pagination-bullet {
-  background-color: #D4D4D4;
+  background-color: #d4d4d4;
 }
 .swiper .swiper-pagination .swiper-pagination-bullet:last-child {
   width: 4px;
   height: 4px;
 }
 .swiper .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
-  background-color: #15803D;
+  background-color: #15803d;
 }
 
 /*# sourceMappingURL=styles.css.map */

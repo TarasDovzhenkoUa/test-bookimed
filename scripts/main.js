@@ -46,13 +46,46 @@ function viewMore() {
       }
     });
   });
+}
 
+function checkBoxPrice() {
+  const radios = document.querySelectorAll('input[name="customRadio"]');
+        const priceSummary = document.getElementById('price-summary');
+
+        radios.forEach(radio => {
+            radio.addEventListener('change', function() {
+                if (this.checked) {
+                    updatePriceSummary(this);
+                }
+            });
+        });
+
+        function updatePriceSummary(radio) {
+            const oldPrice = radio.getAttribute('data-old-price');
+            const newPrice = radio.getAttribute('data-new-price');
+
+            if (!newPrice) {
+                priceSummary.innerHTML = `
+                  <span class="custom-radio__bottom-price">${oldPrice}</span>
+                `;
+            } else {
+                priceSummary.innerHTML = `
+                  <span class="custom-radio__bottom-price--old">${oldPrice}</span>
+                  <span class="custom-radio__bottom-price--new">${newPrice}</span>
+                `;
+            }
+        }
+
+        const checkedRadio = document.querySelector('input[name="customRadio"]:checked');
+        if (checkedRadio) {
+            updatePriceSummary(checkedRadio);
+        }
 }
 
 addEventListener("DOMContentLoaded", () => {
   dropDown();
   viewMore();
-  swiperSlider();
+  checkBoxPrice();
 });
 
 addEventListener("DOMContentLoaded", () => {
@@ -60,8 +93,8 @@ addEventListener("DOMContentLoaded", () => {
     direction: 'horizontal',
     centeredSlides: false,
     slidesPerView: 1,
-    autoHeight: false,
-    spaceBetween: 0,
+    autoHeight: true,
+    spaceBetween: "16px",
     loop: true,
     breakpoints: {
       990: {
